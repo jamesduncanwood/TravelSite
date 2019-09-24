@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy|Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+section#flipCards,section#maps {
+    padding-left: 45px;
+}
+
+ .flip-card-back h1{
+    font-family: 'Chewy', cursive;
+}
+
+ .flip-card-back p{
+    font-family: 'Rancho', cursive;
+     font-size: 22px;
+}
+
+
+h1 {
+    
+    font-family: 'Satisfy', cursive;
+    font-size: -webkit-xxx-large;
+    
+}
+
+nav {
+    position:fixed;
+    width:100%;
+    top:0;
+    background-color:black;
+/*    background:url(../images/flag.jpg);*/
+    text-align: center;
+    transition: all 0.5s ease;
+    z-index:9999;
+    
+    
+}
+
+img#flag {
+    width: 35%;
+    margin-top: 4px;
+   
+}
+
+.main-logo {
+    float: left;
+}
+
+
+nav.hidden {
+    transform: translate3d(0,-100%,0);
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+    float: left;
+    
+}
+
+nav ul li:last-child{
+    margin-right:   0;
+    
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#ffff;
+    font-family: Arial, sans-serif;
+   
+    
+}
+
+
+
+/*
+section#slideShow {
+    margin-top: 7%;
+}
+*/
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+
+
+div#beach {
+    display: none;
+}
+
+div#safari {
+    display: none;
+}
+div#wine {
+    display: none;
+}
+
+div#mountain {
+    display: none;
+}
+div#capetown {
+    display: none;
+}
+
+div#joburg {
+    display: none;
+}
+
+
+
+p#captionParagraph {
+    margin-top: 20px;
+}
+
+
+
+.button {
+    background: url(../images/beach2.jpg) no-repeat;
+    background-size: 116%;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.button2 {
+    background: url(../images/safaributton.jpg) no-repeat;
+    background-size: 116%;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.button3 {
+    background: url(../images/wine.jpg) no-repeat;
+    background-size: 116%;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.button4 {
+    background: url(../images/drakensberg2.jpg) no-repeat;
+    background-size: 116%;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.button5 {
+    background: url(../images/capetown.jpg) no-repeat;
+    background-size: 116%;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.button6 {
+    background: url(../images/joburg.jpg) no-repeat;
+    background-size: 116%;
+    color: black;
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+
+
+
+/*
+.button:hover {
+  background-color: green;
+}
+*/
+
+
+
+
+imgflip {
+    padding: 15px;
+}
+
+.myflipcards {
+    float: left;
+    padding:30px;
+}
+
+.clear {
+    clear: both;
+}
+
+.myflipcards::after {
+content: "";    
+  clear: both;
+  display: table;
+   
+}
+
+.flip-card {
+    float:left;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+
+background-color: #fff;
+background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/*
+.slider {
+    width:1000px;
+    height:400px;
+     background: url(../images/capetown.jpg);
+    background-repeat: no-repeat;
+    margin: 100px auto;
+    animation: slide 5s infinite;
+}
+*/
+
+
+.containerslide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.containerslide .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800%;
+    height: 100vh;
+    float: left;
+    animation: animate 45s linear infinite;
+}
+
+.containerslide .slider .slide {
+    width: 12.5%;
+    height: 100vh;
+    float: left;
+    position: relative;
+
+}
+
+
+
+.containerslide .slider .slide .caption {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+
+}
+
+.containerslide .slider .slide .caption h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 48px;
+}
+
+.containerslide .slider .slide .caption p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.containerslide .slider .slide.slide1 {
+    background: url(../images/capetown2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide2 {
+    background: url(../images/johannesburg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide3 {
+    background: url(../images/durban.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide4 {
+    background: url(../images/krugerpark.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide5 {
+    background: url(../images/drakensburg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide6 {
+    background: url(../images/stellenbosch.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide7 {
+    background: url(../images/robbenisland.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.containerslide .slider .slide.slide8 {
+    background: url(../images/campsbay.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+
+    }
+
+    5% {
+        left: 0;
+    }
+
+    10% {
+        left: -100%;
+    }
+
+    15% {
+        left: -100%
+    }
+
+    20% {
+        left: -200%;
+    }
+
+    25% {
+        left: -200%
+    }
+
+    30% {
+        left: -300%;
+    }
+
+    35% {
+        left: -300%
+    }
+
+    40% {
+        left: -400%;
+    }
+
+    45% {
+        left: -400%
+    }
+
+    50% {
+        left: -500%;
+    }
+
+    55% {
+        left: -500%
+    }
+
+    60% {
+        left: -600%;
+    }
+
+    65% {
+        left: -600%
+    }
+
+    70% {
+        left: -700%;
+    }
+
+    100% {
+        left: -700%
+    }
+
+/*
+    85% {
+        left: -800%;
+    }
+*/
+
+/*
+    100% {
+        left: -800%
+    }
+*/
+
+
+
+}
+
+@media screen and (max-width:600px) {
+
+    .containerslide .slider .slide .caption {
+position: absolute;
+    bottom: -193px;
+    left: 0px;
+    right: 0px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+}
+
